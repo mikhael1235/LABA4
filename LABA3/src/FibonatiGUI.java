@@ -4,7 +4,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class FibonatiGUI {
-    private static void generateFibonati(int n, StringBuilder output) {
+    public static void generateFibonati(int n, StringBuilder output) {
         int a = 0, b = 1;
         for (int i = 0; i < n; i++) {
             output.append(a).append(" ");

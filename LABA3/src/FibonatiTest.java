@@ -11,7 +11,7 @@ public class FibonatiTest {
         StringBuilder output = new StringBuilder();
 
         // Act
-        Fibonati.generateFibonati(n, output);
+        FibonatiGUI.generateFibonati(n, output);
 
         // Assert
         assertEquals(expectedSequence, output.toString(), "Последовательность Фибоначчи для n = 5");
@@ -26,7 +26,7 @@ public class FibonatiTest {
         StringBuilder output = new StringBuilder();
 
         // Act
-        Fibonati.generateFibonati(n, output);
+        FibonatiGUI.generateFibonati(n, output);
 
         // Assert
         assertEquals(expectedSequence, output.toString(), "Последовательность Фибоначчи для n = 0");
@@ -41,7 +41,7 @@ public class FibonatiTest {
         StringBuilder output = new StringBuilder();
 
         // Act
-        Fibonati.generateFibonati(n, output);
+        FibonatiGUI.generateFibonati(n, output);
 
         // Assert
         assertEquals(expectedSequence, output.toString(), "Последовательность Фибоначчи для n = -5");
