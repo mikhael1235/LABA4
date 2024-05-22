@@ -1,17 +1,17 @@
 import java.util.Scanner;
 
 public class Fibonati {
-    // Изменил 'n' на 'count' для большей ясности
-    public static void generateFibonati(int count, StringBuilder output) {
-        int previousNumber = 0, currentNumber = 1;
-        for (int i = 0; i < count; i++) {
-            // Изменил 'a' на 'previousNumber' для большей ясности
-            output.append(previousNumber).append(" ");
-            // Изменил 'b' на 'currentNumber' для большей ясности
-            int nextNumber = previousNumber + currentNumber;
-            previousNumber = currentNumber;
-            // Изменил 'next' на 'nextNumber' для большей ясности
-            currentNumber = nextNumber;
+    // Изменил 'count' на 'n' для большей ясности
+    public static void generateFibonati(int n, StringBuilder output) {
+        int a = 0, b = 1;
+        for (int i = 0; i < n; i++) {
+            // Изменил 'previousNumber' на 'a' для большей ясности
+            output.append(a).append(" ");
+            // Изменил 'currentNumber' на 'b' для большей ясности
+            int next = a + b;
+            a = b;
+            // Изменил 'nextNumber' на 'next' для большей ясности
+            b = next;
         }
     }
 
