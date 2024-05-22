@@ -1,4 +1,6 @@
-public class Computer {
+
+// Было изменено название класса для лучшей читаемости
+public class Computeri {
     public Winchester winchester;
     public DiskDrive diskDrive;
     public Ram ram;
@@ -6,7 +8,7 @@ public class Computer {
     protected boolean isHandMade;
     protected int price;
 
-    public Computer(Winchester winchester, DiskDrive diskDrive, Ram ram, boolean isHandMade, int price) {
+    public Computeri(Winchester winchester, DiskDrive diskDrive, Ram ram, boolean isHandMade, int price) {
         this.winchester = winchester;
         this.diskDrive = diskDrive;
         this.ram = ram;
