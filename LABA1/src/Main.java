@@ -14,23 +14,7 @@ public class Main {
         repository.addComputer(computer4);
         repository.addComputer(gamingComputer1);
 
-        for (Computeri computer : repository.getAllComputers()) {
-            computer.turnOn();
-            computer.checkForViruses();
-            System.out.println(computer.printWinchesterSize());
-            System.out.println(computer);
-            computer.updateComponents();
-            System.out.println(computer);
-            computer.turnOff();
-            System.out.println(" ");
-        }
-
-        Computeri cheapestComputer = repository.getComputerByIndex(0);
-        for (Computeri computer : repository.getAllComputers()) {
-            if (computer.price < cheapestComputer.price) {
-                cheapestComputer = computer;
-            }
-        }
-        System.out.println("Самый выгодный компьютер стоит: " + cheapestComputer.price + " руб.");
+        // Создаем и запускаем графический интерфейс
+        ComputerRepositoryGUI gui = new ComputerRepositoryGUI(repository);
     }
 }
