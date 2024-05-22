@@ -1,3 +1,5 @@
+
+// Было изменено название класса для лучшей читаемости
 public class Computeri {
     public Winchester winchester;
     public DiskDrive diskDrive;
